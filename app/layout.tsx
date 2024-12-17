@@ -1,17 +1,24 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+
 import "./globals.css";
 import "./reset.css";
+import { Josefin_Sans, Karla, Exo_2 } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const josefinSans = Josefin_Sans({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  variable: "--font-josefin",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const exo2 = Exo_2({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  variable: "--font-exo2",
+});
+const karla = Karla({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-karla",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${josefinSans.variable} ${exo2.variable}   ${karla.variable} antialiased`}
       >
         {children}
       </body>

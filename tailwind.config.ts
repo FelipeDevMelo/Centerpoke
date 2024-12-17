@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui"
+import { Josefin_Sans, Karla } from "next/font/google";
 
 export default {
   content: [
@@ -9,6 +10,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        josefin: ['var(--font-josefin)', 'sans-serif'],
+        exo2: ['var(--font-exo2)', 'sans-serif'],
+        karla: ['var(--font-karla)', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
