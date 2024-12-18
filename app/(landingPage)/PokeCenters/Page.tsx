@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const PokeCenters = () => {
+const PokeCenters = () => {
   return (
-    <div>Poke centers</div>
+   <div>poke</div>
   )
 }
+
+export default PokeCenters;
