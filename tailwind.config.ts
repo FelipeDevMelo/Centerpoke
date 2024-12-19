@@ -11,9 +11,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        josefin: ['var(--font-josefin)', 'sans-serif'],
+        Josefin_Sans: ['var(--font-josefin)', 'sans-serif'],
         exo2: ['var(--font-exo2)', 'sans-serif'],
-        karla: ['var(--font-karla)', 'sans-serif'],
+        Karla: ['var(--font-karla)', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",

@@ -1,0 +1,9 @@
+.title {
+  text-shadow: #fbfb95 2px 5px;
+  font-weight: bolder;
+  color: #f44583;
+
+  height: fit-content;
+  justify-self: center;
+  align-self: center;
+}
